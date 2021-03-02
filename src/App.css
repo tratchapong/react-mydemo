@@ -1,11 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 html {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   max-width: 1200px;
   margin: auto;
 }
@@ -17,9 +26,6 @@ nav {
   min-height: 10vh;
   background-color: deeppink;
   color: white;
-}
-nav * {
-  text-decoration: none;
 }
 
 nav ul {
