@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Header from './Header'
 import Card from './Card'
 
-
 function App() {
 
   const [list, setList] = useState([
@@ -14,12 +13,11 @@ function App() {
     { id:6, task: 'Job5', status: 'done'},
   ]);
   
-
   return (
     <div className="App">
-      <Header list={list} setList={setList} />
+      <Header />
       <div className="card-area">
-        <Card name="Todo" list={ list.filter(x=>x.status==='todo')} setList={setList} />
+        <Card name="Todo" list={ list.filter(x=>x.status==='todo')} />
         <Card name="Doing" list={ list.filter(x=>x.status==='doing')} />
         <Card name="Done" list={ list.filter(x=>x.status==='done')} />
       </div>
@@ -28,4 +26,5 @@ function App() {
 }
 
 export default App;
+
 

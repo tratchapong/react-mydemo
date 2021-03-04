@@ -3,12 +3,11 @@ import './App.css';
 
 
 function Shop() {
-
+  const [items, setItems] = useState([])
+  
   useEffect(() => {
     fetchItems()
   }, [])
-
-  const [items, setItems] = useState([])
 
   async function fetchItems() {
     const resp = await fetch('https://fortnite-api.theapinetwork.com/store/get')

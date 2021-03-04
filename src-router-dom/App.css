@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: deeppink;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  padding : 5px;
+}
