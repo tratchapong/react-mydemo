@@ -17,7 +17,6 @@ function Card(props) {
         <button onClick={()=>editItem(x.id)}>Edit</button>
         <button onClick={()=>deleteItem(x.id)}>Delete</button>
         { x.status !=='done' && <button onClick={()=>nextStatus(x.id)} >next</button> }
-
         </div>
       ))
       }

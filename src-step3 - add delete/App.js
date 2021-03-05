@@ -21,26 +21,6 @@ function App() {
     );
   };
 
-  const handleNext = id => {
-    setList(
-      list.map( item => 
-        item.id === id 
-        ? { ...item, status: item.status === 'todo'? 'doing' : 'done'}  
-        : item 
-      )
-    )
-  }
-  const handleEdit = id => {
-    const textToEdit = prompt('Enter task');
-    setList(
-      list.map(item =>
-        item.id === id 
-          ? { ...item, task: textToEdit }
-          : item
-      )
-    );
-  };
-  
   return (
     <div className="App">
       <Header list={list} setList={setList} />
@@ -49,25 +29,19 @@ function App() {
           name="Todo"
           list={list.filter(x => x.status === 'todo')} 
           setList={setList}
-          handleDelete={handleDelete} 
-          handleNext={handleNext} 
-          handleEdit={handleEdit}
+          handleDelete={handleDelete}  
         />
         <Card 
           name="Doing"
           list={list.filter(x => x.status === 'doing')} 
           setList={setList}
-          handleDelete={handleDelete}
-          handleNext={handleNext}
-          handleEdit={handleEdit}   
+          handleDelete={handleDelete}  
         />
         <Card 
           name="Done"
           list={list.filter(x => x.status === 'done')} 
           setList={setList}
-          handleDelete={handleDelete} 
-          handleNext={handleNext} 
-          handleEdit={handleEdit} 
+          handleDelete={handleDelete}  
         />
 
       </div>
