@@ -36,6 +36,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: whitesmoke;
+  height: 10vh;
+  background-color: teal;
   font-size: 1.5em;
   padding: 0 20px;
 }

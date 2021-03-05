@@ -15,13 +15,6 @@ body {
   margin: auto;
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  height: 10vh;
-  background-color: teal;
-}
-
 .card-area {
   display: flex;
   min-height: 400px;
@@ -43,6 +36,8 @@ body {
   justify-content: space-between;
   align-items: center;
   color: whitesmoke;
+  height: 10vh;
+  background-color: teal;
   font-size: 1.5em;
   padding: 0 20px;
 }
