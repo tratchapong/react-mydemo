@@ -15,20 +15,14 @@ body {
   margin: auto;
 }
 
-.card-area {
+.App > form {
   display: flex;
-  min-height: 400px;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-top: 30px;
-  background-color: tomato;
-}
-
-.card {
-  min-width: 25%;
-  min-height: 10em ;
-  background-color: deepskyblue;
-  color: whitesmoke;
+  height: 60px;
+  padding-left: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgb(148, 91, 201);
+  color: silver;
 }
 
 .header {
@@ -47,8 +41,54 @@ body {
   height: 2.5em;
 }
 
-.header input {
-  width: 35ch;
+.App > form > * {
+  font-size: 20px;
+  margin-right: 10px;
+  padding: 5px;
+}
+.App input[type="text"] {
+  width: 30ch;
+  border-radius: 5px;
 }
 
-  
+.card-area {
+  display: flex;
+  min-height: 400px;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 30px;
+  background-color: tomato;
+}
+
+.card {
+  min-width: 30%;
+  min-height: 10em;
+  background-color: deepskyblue;
+  color: whitesmoke;
+  padding: 5px;
+  box-shadow: 8px 3px 8px saddlebrown;
+  border-radius: 5px;
+}
+
+.card > * {
+  padding: 3px;
+}
+
+.card > h3 {
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  background-color: lightyellow;
+  color: lightseagreen;
+}
+
+.card > div > * {
+  padding: 1px;
+  margin-left: 5px;
+}
+
+.card button {
+  font-size: 18px;
+  color: blueviolet;
+  border-radius: 3px;
+}
