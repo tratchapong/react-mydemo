@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  height: 100vh;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  background-color: teal;
+}
+
+.card-area {
+  display: flex;
+  min-height: 400px;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 30px;
+  background-color: tomato;
+}
+
+.card {
+  min-width: 25%;
+  min-height: 10em ;
+  background-color: deepskyblue;
+  color: whitesmoke;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 1.5em;
+  padding: 0 20px;
+}
+
+.header > div > * {
+  margin-left: 8px;
+  height: 2.5em;
+}
+
+.header input {
+  width: 35ch;
+}
+
+  
